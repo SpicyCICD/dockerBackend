@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Nodejs using docker and ubuntu wsl and mysql",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "set NODE_ENV=dev && nodemon src/index.js",
+    "prod": "set NODE_ENV=production && node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mahesh",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "ip": "^2.0.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.9.7",
+    "pino": "^9.1.0",
+    "pino-pretty": "^11.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
